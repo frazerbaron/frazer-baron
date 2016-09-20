@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Frazer Baron</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LIS 2360 Fall 2016</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#topic1">What is Version Control?</a>
+                    </li>
+                    <li>
+                        <a href="#topic2">Centralized Version Control Systems</a>
+                    </li>
+                    <li>
+                        <a href="#topic3">A Short History of Git</a>
+                    </li>
+                    <li>
+                        <a href="#topic4">Distributed Version Control Systems</a>
+                    </li>
+                    <li>
+                        <a href="#topic5">Tracking New Files using Git</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h2>Lesson 3 Highlights</h2>
+                <h3>Frazer Baron</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="topic1">
+            <img class="featurette-image img-responsive pull-right" src="https://homes.cs.washington.edu/~mernst/advice/version-control-fig2.png">
+            <h2 class="featurette-heading">Highlight #1
+                <span class="text-muted">What is Version Control?</span>
+            </h2>
+            <p class="lead">Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+                            If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="topic2">
+            <img class="featurette-image img-responsive pull-left" src="http://pigne.org/teaching/images/cvcs-diag.png">
+            <h2 class="featurette-heading">Highlight #2
+                <span class="text-muted">Centralized Version Control Systems</span>
+            </h2>
+            <p class="lead">Centralized Version Control Systems (CVCSs) are systems, such as CVS, Subversion, and Perforce; have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this has been the standard for version control.
+                            This setup offers many advantages, especially over local VCSs. For example, everyone knows to a certain degree what everyone else on the project is doing.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="topic3">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://blog.kualo.com/wp-content/uploads/2015/11/git.jpg">
+            <h2 class="featurette-heading">Highlight #3
+                <span class="text-muted"> A Short History of Git</span>
+            </h2>
+            <p class="lead"> Linux kernel is an open source software project of fairly large scope. For most of the lifetime of the Linux kernel maintenance (1991–2002), changes to the software were passed around as patches and archived files. In 2002, the Linux kernel project began using a proprietary DVCS called BitKeeper.
+                            In 2005, the relationship between the community that developed the Linux kernel and the commercial company that developed BitKeeper broke down, and the tool’s free-of-charge status was revoked. This prompted the Linux development community (and in particular Linus Torvalds, the creator of Linux) to develop their own tool based on some of the lessons they learned while using BitKeeper.</p>
+        </div>
+        
+        <hr class="featurette-divider">
+        
+       <!-- Fourth Featurette -->
+        <div class="featurette" id="topic4">
+            <img class="featurette-image img-responsive pull-left" src="https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png">
+            <h2 class="featurette-heading">Highlight #4
+                <span class="text-muted">Distributed Version Control Systems</span>
+            </h2>
+            <p class="lead">Distributed Version Control Systems (DVCS) such as Git, Mercurial, Bazaar or Darcs,show that clients don’t just check out the latest snapshot of the files: they fully mirror the repository. Thus if any server dies, and these systems were collaborating via it, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Fifth Featurette -->
+        <div class="featurette" id="topic5">
+            <img class="featurette-image img-responsive pull-right" src="http://graphicrustication.com/images/tutorials/learn-git.gif">
+            <h2 class="featurette-heading">Highlight #5
+                <span class="text-muted">Tracking New Files using Git</span>
+            </h2>
+            <p class="lead">To begin tracking the README file, you can run this:<br> $ git add README.<br><br>
+                            If you run your status command again, you can see that your README file is now tracked and staged to be committed:<br><br>
+                            $ git status <br>
+                            On branch master<br>
+                            Your branch is up-to-date with 'origin/master'.<br>
+                            Changes to be committed:<br>
+                              (use "git reset HEAD (insert file name)..." to unstage)<br>
+                            <br>
+                             new file:   README<br>
+                             You can tell that it’s staged because it’s under the “Changes to be committed” heading</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Fall 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
